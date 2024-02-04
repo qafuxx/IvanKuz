@@ -1,0 +1,225 @@
+@font-face {
+   font-family: 'SF-Pro-Regular';
+   src: url('../fonts/SF-Pro.ttf');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'SF-Pro-Medium';
+   src: url('../fonts/SF-Pro.ttf');
+   font-weight: 510;
+}
+
+li {
+   list-style-type: none;
+   padding: 0;
+   display: flex;
+   gap: 12px;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+ul {
+   max-width: 400px;
+   justify-content: space-between;
+   list-style-type: none;
+   padding: 0;
+   display: flex;
+   align-items: flex-start;
+   gap: 192px;
+}
+
+a {
+   color: var(--gray-medium-color);
+   text-decoration: none;
+   position: relative;
+   line-height: 155%;
+   font-size: 16px;
+   font-family: 'SF-Pro-Medium';
+   transition: color 1.6s cubic-bezier(0, 0.73, 0.34, 1.01);
+}
+
+a::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0px;
+   width: 0;
+   height: 1.5px;
+   background-color: var(--white-color);
+}
+
+a:hover:before {
+   width: 100%;
+}
+
+a::before {
+   transition: width 0.35s ease-in-out;
+}
+
+a:hover {
+   color: var(--white-color);
+}
+
+.active {
+   color: var(--white-color);
+   pointer-events: none;
+}
+
+body {
+   background-color: var(--black-color);
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   -webkit-font-smoothing: antialiased;
+}
+
+header {
+   margin: 0 auto 26px auto;
+   max-width: 1840px;
+   padding: 0;
+   display: flex;
+   align-items: flex-start;
+   gap: 1133px;
+}
+.container {
+   width: 91vh;
+   max-width: 91vh;
+   border: 4px solid red;
+   margin: 0 auto 80px auto;
+   gap: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.case {
+   border-radius: 24px;
+   background-color: var(--gray-hard-color);
+   display: flex;
+   height: 411px;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 28px;
+}
+
+.works {
+   display: flex;
+   width: 910px;
+   align-items: flex-start;
+   align-content: flex-start;
+   gap: 19px 20px;
+   flex-wrap: wrap;
+   padding: 0;
+   margin: 0;
+}
+
+.works__content {
+   display: flex;
+   padding: 0px 24px 46px;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 4px;
+   flex: 1 0 0;
+   align-self: stretch;
+}
+
+.works a::before {
+   height: 0;
+}
+
+.works .case img {
+   object-fit: cover;
+   object-position: center;
+   width: 445px;
+   height: 275px;
+   border-radius: 24px 24px 0 0;
+}
+
+h1 {
+   color: var(--white-color);
+   text-align: center;
+   font-family: 'SF-Pro-Medium';
+   font-size: 64px;
+   line-height: 100%; /* 64px */
+   letter-spacing: 1.28px;
+   margin: 0;
+   padding: 0;
+}
+
+h5 {
+   color: var(--gray-light-color);
+   font-family: 'SF-Pro-Medium';
+   font-size: 16px;
+   font-style: normal;
+   line-height: 145%; /* 29px */
+   margin: 0;
+   padding: 0;
+}
+
+sub {
+   color: var(--gray-medium-color);
+   font-family: 'SF-Pro-Medium';
+   font-size: 20px;
+   font-style: normal;
+   line-height: 145%; /* 29px */
+   padding: 0;
+   margin: 0;
+}
+
+h4 {
+   color: var(--white-color);
+   font-family: 'SF-Pro-Regular';
+   font-size: 20px;
+   font-style: normal;
+   line-height: 145%; /* 29px */
+   padding: 0;
+   margin: 0;
+}
+
+.preview__tags {
+   padding-top: 8px;
+   display: flex;
+   gap: 12px;
+   align-items: center;
+   justify-content: center;
+}
+
+.preview__tags span {
+   font-family: 'SF-Pro-Regular';
+   color: var(--white-color);
+   line-height: 145%; /* 23.2px */
+   letter-spacing: 0.16px;
+}
+
+.preview__tags span:nth-child(1) {
+   padding: 3px 8px 2px 8px;
+   background-color: var(--red);
+   border-radius: 4px;
+}
+
+.preview__tags span:nth-child(2) {
+   padding: 3px 8px 2px 8px;
+   background-color: var(--blue);
+   border-radius: 4px;
+}
+
+.preview__tags span:nth-child(3) {
+   padding: 3px 8px 2px 8px;
+   background-color: var(--purple);
+   border-radius: 4px;
+}
+
+.preview p {
+   width: 570px;
+   color: var(--gray-medium-color);
+   text-align: center;
+   font-family: 'SF-Pro-Regular';
+   font-size: 20px;
+   line-height: 130%; /* 26px */
+   letter-spacing: 0.2px;
+   margin: 0;
+   padding: 24px 0 0 0;
+}
