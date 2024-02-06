@@ -1,7 +1,7 @@
 {
-   "pdesign": "Product designer",
-   "ldesign": "Design lead",
-   "sdesign": "Design system expert",
+   "product_design": "Product designer",
+   "lead_design": "Design lead",
+   "system_design": "Design system expert",
    "title": "Ivan Kuznetsov",
    "lang": "Language",
    "read_cv": "read cv ↗",
