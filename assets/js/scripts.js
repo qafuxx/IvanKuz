@@ -24,10 +24,10 @@ async function changeLanguage(lang) {
 
    const langData = await fetchLanguageData(lang);
    updateContent(langData);
-   toggleRussiaStylesheet(lang); // Toggle Arabic stylesheet
+   toggleRussiaStylesheet(lang); // Toggle Russia stylesheet
 }
 
-// Function to toggle Arabic stylesheet based on language selection
+// Function to toggle Russia stylesheet based on language selection
 function toggleRussiaStylesheet(lang) {
    const head = document.querySelector('head');
    const link = document.querySelector('#styles-link');
@@ -38,7 +38,7 @@ function toggleRussiaStylesheet(lang) {
       const newLink = document.createElement('link');
       newLink.id = 'styles-link';
       newLink.rel = 'stylesheet';
-      newLink.href = './assets/css/style-ru.css'; // Path to Arabic stylesheet
+      newLink.href = './assets/css/style-ru.css'; // Path to Russia stylesheet
       head.appendChild(newLink);
    }
 }
