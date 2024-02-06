@@ -4,25 +4,28 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="assets/css/color.css" />
-      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/style.css" />
       <title>Document</title>
    </head>
    <body>
       <header>
          <ul class="langWrap">
-            <h5 class="language">Language</h5>
+            <h5 class="language" data-i18n="lang">Language</h5>
             <li>
-               <a href="#" language="english" class="active">eng</a>
-               <a href="#" language="russia" class="magnet-button">rus</a>
+               <a href="#" onclick="changeLanguage('en')">eng</a>
+               <a href="#" onclick="changeLanguage('ru')">rus</a>
             </li>
          </ul>
          <ul class="Links">
-            <h5>Links</h5>
+            <h5 data-i18n="links">Links</h5>
             <li>
-               <a href="#" language="english" style="color: var(--white-color)"
-                  >read cv</a
+               <a href="#" style="color: var(--white-color)" data-i18n="read_cv"
+                  >read cv ↗</a
                >
-               <a href="#" language="russia" style="color: var(--white-color)"
+               <a
+                  href="#"
+                  style="color: var(--white-color)"
+                  data-i18n="about_me"
                   >about me</a
                >
             </li>
@@ -31,19 +34,40 @@
 
       <div class="container">
          <div class="preview content">
-            <h1 class="title">Ivan Kuznetsov</h1>
+            <h1 class="title" data-i18n="welcome__title">Ivan Kuznetsov</h1>
             <div class="preview__tags">
                <span class="product_designer">Product designer</span>
                <span class="design_lead">Design lead</span>
                <span class="design_expert">Design system expert</span>
             </div>
-            <p class="description">
+            <p class="description" data-i18n="welcome__desc">
                I’m a product designer working at the intersection of
                prototyping, visuals, systems. I’m currently at Severstal, making
                the world a little bit better for creators.
             </p>
          </div>
          <div class="works">
+            <a href="#" class="case">
+               <img src="/assets/img/preview_bugatti.png" alt="" />
+               <div class="works__content">
+                  <sub>October,2022</sub>
+                  <h4>Bugatti - UI concept</h4>
+               </div>
+            </a>
+            <a href="#" class="case">
+               <img src="/assets/img/preview_bugatti.png" alt="" />
+               <div class="works__content">
+                  <sub>October,2022</sub>
+                  <h4>Bugatti - UI concept</h4>
+               </div>
+            </a>
+            <a href="#" class="case">
+               <img src="/assets/img/preview_bugatti.png" alt="" />
+               <div class="works__content">
+                  <sub>October,2022</sub>
+                  <h4>Bugatti - UI concept</h4>
+               </div>
+            </a>
             <a href="#" class="case">
                <img src="/assets/img/preview_bugatti.png" alt="" />
                <div class="works__content">

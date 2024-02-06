@@ -1,0 +1,11 @@
+.preview p {
+   width: 606px;
+   color: var(--gray-medium-color);
+   text-align: center;
+   font-family: 'SF-Pro-Regular';
+   font-size: 20px;
+   line-height: 130%;
+   letter-spacing: 0.2px;
+   margin: 0;
+   padding: 24px 0 0 0;
+}
