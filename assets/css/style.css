@@ -548,7 +548,8 @@ footer a {
 
 .img-aboutme {
   align-self: stretch;
-  background: url(/assets/img/img_abtme.jpg) no-repeat center / cover, lightgray;
+  background: url(./assets/img/img_abtme.jpg) no-repeat center / cover,
+    lightgray;
   border-radius: 8px;
   height: 400px;
 }
@@ -735,8 +736,6 @@ footer a {
     height: 400px;
     max-height: auto;
     flex: none;
-    background: url(/assets/img/img_abtme.jpg) no-repeat center / cover,
-      lightgray;
     border-radius: 8px;
   }
 
@@ -949,8 +948,6 @@ footer a {
     height: 500px;
     flex: none;
     align-self: none;
-    background: url(/assets/img/img_abtme.jpg) no-repeat center / cover,
-      lightgray;
     border-radius: 8px;
   }
   header ul {
