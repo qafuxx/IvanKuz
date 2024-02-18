@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/color.css" />
+  </head>
+  <body style="display: block; justify-content: center; align-items: center">
+    <header>
+      <ul class="langWrap">
+        <h5
+          class="language"
+          data-i18n="lang"
+          style="color: var(--gray-light-color)"
+        >
+          Language
+        </h5>
+        <li>
+          <a href="#" onclick="changeLanguage('en')">eng</a>
+          <a href="#" onclick="changeLanguage('ru')">rus</a>
+        </li>
+      </ul>
+      <ul class="Links">
+        <h5 data-i18n="links" style="color: var(--gray-light-color)">Links</h5>
+        <li>
+          <a
+            href="./assets/cv/Ivan Kuznetcov CV.pdf"
+            style="color: var(--white-color)"
+            data-i18n="read_cv"
+            target="_blank"
+            >read cv ↗</a
+          >
+          <a
+            href="index.html"
+            style="color: var(--white-color)"
+            data-i18n="works_me"
+            >works</a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="main__block__aboutme" style="gap: 60px">
+      <div class="aboutme__block">
+        <sub data-i18n="about-subtitle">About</sub>
+        <h2 data-i18n="about-desc">
+          Hello, there! I've been working since 2020. during this time, i
+          realized that i like to combine functional solutions with aesthetics.
+          this is how i create a product that will be used with love.
+        </h2>
+      </div>
+      <div class="flex-wrap">
+        <div class="flex-row">
+          <div class="div-txts-abtme2">
+            <div class="div-txts-pos">
+              <div class="position">
+                <sub class="margin5em" data-i18n="pos-sub">Position</sub>
+                <h5 data-i18n="pos-desc">Middle+ UX/UI Designer</h5>
+              </div>
+              <div class="exp">
+                <sub class="margin5em" data-i18n="exp-sub">Experience</sub>
+                <h5 data-i18n="exp-desc">4+ years</h5>
+              </div>
+            </div>
+            <div class="company">
+              <sub class="margin5em" data-i18n="comp-sub">Current company</sub>
+              <span>
+                <img
+                  src="./assets/img/logo_company.jpg"
+                  width="24px"
+                  height="24px"
+                  alt=""
+                />
+                <h5 data-i18n="comp-desc">AumiDigital</h5>
+              </span>
+            </div>
+            <div class="degree">
+              <sub class="margin5em" data-i18n="deg-sub">Degree</sub>
+              <h5 data-i18n="deg-desc">The Creative of Designer in IT</h5>
+            </div>
+          </div>
+          <div class="div-txts-contact">
+            <div class="block-email-contact">
+              <sub class="margin5em">Email</sub>
+              <a href="mailto:aumi.digital@gmail.com">aumi.digital@gmail.com</a>
+            </div>
+            <div class="block-location-contact">
+              <sub class="margin5em">Location</sub>
+              <h5>Russia, Moscow</h5>
+            </div>
+            <div class="block-phone-contact">
+              <sub class="margin5em">Phone</sub>
+              <h5>+7 (707) 777 77-77</h5>
+            </div>
+          </div>
+        </div>
+        <div class="img-aboutme"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <a href="#" class="link" target="_blank">LinkedIn</a>
+        <a href="#" class="link" target="_blank">Email</a>
+        <a href="#" class="link" target="_blank">Telegram</a>
+      </div>
+    </footer>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
