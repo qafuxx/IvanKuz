@@ -38,7 +38,7 @@ function toggleRussiaStylesheet(lang) {
     const newLink = document.createElement('link');
     newLink.id = 'styles-link';
     newLink.rel = 'stylesheet';
-    newLink.href = '/assets/css/style-ru.css'; // Path to Russia stylesheet
+    newLink.href = './assets/css/style-ru.css'; // Path to Russia stylesheet
     head.appendChild(newLink);
   }
 }
