@@ -1,14 +1,15 @@
 @font-face {
   font-family: 'SF-Pro-Regular';
-  src: url('../fonts/SF-Pro.ttf');
+  src: url('/assets/fonts/SF-Pro.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'SF-Pro-Medium';
-  src: url('../fonts/SF-Pro.ttf');
+  src: url('/assets/fonts/SF-Pro.ttf');
   font-weight: 510;
 }
+
 
 ::-webkit-scrollbar {
   display: none;
